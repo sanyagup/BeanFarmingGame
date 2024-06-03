@@ -5,19 +5,19 @@ starting_cards_values = [(2,3,4,5), (4,6,8,10), (2,3,4), (2,3), (2,4,5,6), (2,4,
 starting_cards_numbers = [8,20,4,6,10,12,22,24,18,16,14]
 intital_number_of_cards = 154
 
-# Initialize the list with a tuple
-my_list = [1, 2, (5, 6), 3, 4]
+# # Initialize the list with a tuple
+# my_list = [1, 2, (5, 6), 3, 4]
 
-# Access the tuple at index 2
-tuple_at_index_2 = my_list[2]
+# # Access the tuple at index 2
+# tuple_at_index_2 = my_list[2]
 
-# Access the elements within the tuple
-element_5 = tuple_at_index_2[0]
-element_6 = tuple_at_index_2[1]
+# # Access the elements within the tuple
+# element_5 = tuple_at_index_2[0]
+# element_6 = tuple_at_index_2[1]
 
-# Print the elements
-print("Element 5:", element_5)
-print("Element 6:", element_6)
+# # Print the elements
+# print("Element 5:", element_5)
+# print("Element 6:", element_6)
 
 number_of_players = int(input("Welcome to the game!! (Max amount of players 7, minimum 2) Enter the amount of players you want: "))
 #assign 5 cards to each player
@@ -195,6 +195,7 @@ print()
 answer = input('Player 1. Do you want to take one or two of these cards into your farm? (type yes), else do you want to trade? (type no if this is the case): ')
 if answer == 'yes':
     answer1 = int(input('Player 1 only one or two? (Type value): '))
+    print(player1)
     if answer1 == 1:
         card_type = input('Enter card type: ')
         index = starting_cards_names.index(card_type)
@@ -202,11 +203,11 @@ if answer == 'yes':
         farm_number = input("Which farm do you want to add it to?: ")
         if farm_number == 1:
             # Access the tuple at index 2
-            tuple_at_index_2 = player1_farm[0]
+            tuple_at_index_0 = player1_farm[0]
 
             # Access the elements within the tuple
-            element_5 = tuple_at_index_2[0]
-            element_6 = tuple_at_index_2[1]
+            tuple_at_index_0[0]=card_type
+
         elif farm_number == 2:
              # Access the tuple at index 2
             tuple_at_index_2 = player1_farm[0]
