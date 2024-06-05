@@ -189,9 +189,9 @@ if number_of_players == 7:
 counter = 1
 
 print(f'Round {counter}')
+print(player1)
+print(player2)
 print()
-print()
-
 answer = input('Player 1. Do you want to take one or two of these cards into your farm? (type yes), else do you want to trade? (type no if this is the case): ')
 if answer == 'yes':
     answer1 = int(input('Player 1 only one or two? (Type value): '))
@@ -200,13 +200,10 @@ if answer == 'yes':
         card_type = input('Enter card type: ')
         index = starting_cards_names.index(card_type)
         starting_cards_numbers[index] -= 1
-        farm_number = input("Which farm do you want to add it to?: ")
+        farm_number = int(input("Which farm do you want to add it to?: "))
+        print(farm_number)
         if farm_number == 1:
-            # Access the tuple at index 2
-            tuple_at_index_0 = player1_farm[0]
-
-            # Access the elements within the tuple
-            tuple_at_index_0[0]=card_type
+            print(player1_farm[0][0]+' here')
 
         elif farm_number == 2:
              # Access the tuple at index 2
@@ -222,3 +219,4 @@ if answer == 'yes':
             # Access the elements within the tuple
             element_5 = tuple_at_index_2[0]
             element_6 = tuple_at_index_2[1]
+
