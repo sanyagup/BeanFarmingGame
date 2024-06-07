@@ -21,7 +21,7 @@ intital_number_of_cards = 154
 
 number_of_players = int(input("Welcome to the game!! (Max amount of players 7, minimum 2) Enter the amount of players you want: "))
 #assign 5 cards to each player
-player1= ['','','','','']
+player1=['','','','','']
 player2=['','','','','']
 player3=['','','','','']
 player4=['','','','','']
