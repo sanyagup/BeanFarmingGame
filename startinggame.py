@@ -29,7 +29,7 @@ player5=['','','','','']
 player6=['','','','','']
 player7=['','','','','']
 
-player1_farm= [('',0),('',0)]
+player1_farm=[('',0),('',0)]
 player2_farm=[('',0),('',0)]
 player3_farm=[('',0),('',0)]
 player4_farm=[('',0),('',0)]
@@ -203,7 +203,9 @@ if answer == 'yes':
         farm_number = int(input("Which farm do you want to add it to?: "))
         print(farm_number)
         if farm_number == 1:
-            print(player1_farm[0][0]+' here')
+            tuple_at_index = player1_farm[0]
+            tuple_at_index[0] = card_type
+            tuple_at_index[1] += 1
 
         elif farm_number == 2:
              # Access the tuple at index 2
